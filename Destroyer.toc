@@ -1,0 +1,8 @@
+## Interface: 20502
+## Title: Destroyer
+## Author: Jason
+## Notes: 自动销毁
+## Version: 1.0
+
+Destroyer.lua
+
