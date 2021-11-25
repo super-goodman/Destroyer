@@ -10,12 +10,10 @@ b1:SetScript("OnClick", function()
             repeat
             local id=select(10,GetContainerItemInfo(b,s)) 
             if items[id] == true then 
-               print(id)
                break
             end 
             PickupContainerItem(b,s) 
             DeleteCursorItem() 
-            --::continue::
             until true
          end 
       end
