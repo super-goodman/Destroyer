@@ -22,6 +22,14 @@ mustDeleteItem = {[23117]=true,[23077]=true,}
 items = {[6948]=true,[21929]=true}
 ``` 
 
+品质名称：
+``` lua
+ --灰色，白色，绿色，紫色，传奇，史诗，制造物，XXXX,XXX
+itemQuality =  {["Poor"] = 0,["Common"] = 1,["Uncommon"] = 2,["Rare"] = 3,["Epic"] = 4,["Legendary"] = 5,["Artifact"] = 6,["Heirloom"] = 7,["WoWToken"] = 8}
+
+``` 
+
+
 保留所有品质为白色的物品
 ``` lua
 containItemQualitySet1 = "Common"
