@@ -32,7 +32,10 @@ itemQuality =  {["Poor"] = 0,["Common"] = 1,["Uncommon"] = 2,["Rare"] = 3,["Epic
 
 保留所有品质为白色的物品
 ``` lua
+--设置保留所有该稀有度的物品1(目前为白色)
 containItemQualitySet1 = "Common"
+--设置保留所有该稀有度的物品2(目前为无)
+containItemQualitySet2 = "Heirloom"
 ``` 
 
 保留所有品质为白色和绿色的物品
