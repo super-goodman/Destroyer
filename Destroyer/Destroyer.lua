@@ -1,23 +1,23 @@
---ÉèÖÃ±£ÁôËùÓĞµÈÓÚ¶ÔÓ¦IDµÄÎïÆ·
+--è®¾ç½®ä¿ç•™æ‰€æœ‰ç­‰äºå¯¹åº”IDçš„ç‰©å“
 containItems = {[6948]=true,[21929]=true}
---ÉèÖÃ±£ÁôËùÓĞ¸ÃÏ¡ÓĞ¶ÈµÄÎïÆ·1(Ä¿Ç°ÎªÂÌÉ«)
+--è®¾ç½®ä¿ç•™æ‰€æœ‰è¯¥ç¨€æœ‰åº¦çš„ç‰©å“1(ç›®å‰ä¸ºç»¿è‰²)
 containItemQualitySet1 = "Uncommon"
---ÉèÖÃ±£ÁôËùÓĞ¸ÃÏ¡ÓĞ¶ÈµÄÎïÆ·2(Ä¿Ç°ÎªÎŞ)
+--è®¾ç½®ä¿ç•™æ‰€æœ‰è¯¥ç¨€æœ‰åº¦çš„ç‰©å“2(ç›®å‰ä¸ºæ— )
 containItemQualitySet2 = "Heirloom"
---ÉèÖÃ±ØĞëÉ¾³ıµÄÎïÆ·
+--è®¾ç½®å¿…é¡»åˆ é™¤çš„ç‰©å“
 mustDeleteItem = {[23117]=true,[23077]=true,}
 
 
- --»ÒÉ«£¬°×É«£¬ÂÌÉ«£¬×ÏÉ«£¬´«Ææ£¬Ê·Ê«£¬ÖÆÔìÎï£¬XXXX,XXX
+ --ç°è‰²ï¼Œç™½è‰²ï¼Œç»¿è‰²ï¼Œç´«è‰²ï¼Œä¼ å¥‡ï¼Œå²è¯—ï¼Œåˆ¶é€ ç‰©ï¼ŒXXXX,XXX
 itemQuality =  {["Poor"] = 0,["Common"] = 1,["Uncommon"] = 2,["Rare"] = 3,["Epic"] = 4,["Legendary"] = 5,["Artifact"] = 6,["Heirloom"] = 7,["WoWToken"] = 8}
 
 
 className,classFilename, classId  = UnitClass("player")
-if classId == 8 then --Ö»ÓĞ·¨Ê¦¿ÉÒÔ¼ÓÔØ
+if classId == 8 then --åªæœ‰æ³•å¸ˆå¯ä»¥åŠ è½½
      
    local b1 = CreateFrame("Button", "Destroyer", GuildRosterFrame, "UIPanelButtonTemplate")
    b1:SetSize(120 ,18)
-   b1:SetText("æ‘§æ¯è€…ï¼šæ— é’±")
+   b1:SetText("é½Ñ„ç˜‰é‘°å’ƒç´°éƒçŠ»æŒ¶")
    b1:SetPoint("TOPRIGHT",-390,-26)
    b1:SetScript("OnClick", function() 
          for b=0,4,1 do 
@@ -32,7 +32,7 @@ if classId == 8 then --Ö»ÓĞ·¨Ê¦¿ÉÒÔ¼ÓÔØ
                   DeleteCursorItem() 
                   break
                end
-               if containItems[id] == true or itemQuality[containItemQualitySet] == quality or itemQuality[containItemQualitySet2] == quality then 
+               if containItems[id] == true or itemQuality[containItemQualitySet1] == quality or itemQuality[containItemQualitySet2] == quality then 
                   --print(id)
                   break
                end 
